@@ -950,6 +950,10 @@ section {
   position: relative;
 }
 
+.qna__list-item.is-active a {
+  color: #579eff;
+}
+
 .qna__list-item.is-active .qna__tooltip {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
