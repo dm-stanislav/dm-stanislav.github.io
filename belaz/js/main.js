@@ -79,12 +79,3 @@ qnaItemsArr.forEach((item) => {
     }
   });
 });
-
-// Preloader
-window.addEventListener('load', () => {
-  select(".preloader").style.transition = "transform 400ms ease-in-out";
-  select(".preloader").style.transform = "translateY(-101%)";
-  select(".preloader").addEventListener("transitionend", () => {
-    select(".preloader").style.display = "none";
-  });
-});
