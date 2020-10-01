@@ -500,7 +500,9 @@ h6 {
   }
 
   .showcase__body {
-    padding-top: 30px;
+    margin-top: 63px;
+    padding-top: 0;
+    height: calc(100vh - 63px);
   }
 
   .showcase__info {
