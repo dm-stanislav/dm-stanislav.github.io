@@ -640,6 +640,7 @@ h6 {
 
 .testimonials {
   margin: 265px 0 215px 0;
+  position: relative;
 }
 
 .testimonials__container {
@@ -652,6 +653,8 @@ h6 {
   border-radius: 24px;
   padding: 65px 118px 90px 118px;
   color: #fff;
+  position: relative;
+  overflow: hidden;
 }
 
 .testimonials__header {
@@ -821,6 +824,19 @@ h6 {
           transform: scale(-1) translateY(-0.5px);
 }
 
+.testimonials__dots-light {
+  position: absolute;
+  top: -15px;
+  left: 92.5%;
+}
+
+.testimonials__dots-dark {
+  position: absolute;
+  top: 270px;
+  left: 9.7vw;
+  z-index: -1;
+}
+
 @media screen and (min-width: 855px) {
   .header__nav-close {
     display: none;
@@ -959,9 +975,7 @@ h6 {
   }
 
   .showcase__body {
-    margin-top: 63px;
     padding-top: 0;
-    height: calc(100vh - 63px);
   }
 
   .showcase__info {
