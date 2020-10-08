@@ -226,3 +226,16 @@ if (tesItems.length > 0) {
     }
   });
 }
+
+// Header on scroll
+window.addEventListener('scroll', headerScroll);
+
+function headerScroll() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    $('.header').classList.add('is-active');
+    $('.header').classList.remove('isnt-active');
+  } else {
+    $('.header').classList.remove('is-active');
+    $('.header').classList.add('isnt-active');
+  }
+}
