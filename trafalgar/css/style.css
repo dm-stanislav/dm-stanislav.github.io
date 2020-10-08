@@ -368,13 +368,17 @@ h6 {
 /* Footer */
 
 .footer {
-  background: -o-linear-gradient(266.59deg, #67C3F3 -8.57%, #5A98F2 82.96%);
-  background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+  position: relative;
+  background: -o-linear-gradient(266.59deg, #67C3F3 -8.57%, #5A98F2 82.96%) no-repeat center/cover;
+  background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%) no-repeat center/cover;
   padding: 118px 0 113px 0;
+  overflow: hidden;
 }
 
 .footer__container {
   max-width: 1210px;
+  position: relative;
+  z-index: 3;
 }
 
 .footer__body {
@@ -446,6 +450,16 @@ h6 {
   color: #fff;
   font-size: 18px;
   line-height: 38px;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__dots {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .section-title {
