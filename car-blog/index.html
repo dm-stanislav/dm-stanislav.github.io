@@ -1,1 +1,1518 @@
-<!DOCTYPE html><html lang="en">    <head>        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"><meta name="description" content="This is a blog about cars." /><meta name="keywords" content="cars, blog, ford, volkswagen, bmw" /><title>Premium Car | Best Blog About Cars</title><link rel="stylesheet" href="./css/style.min.css"><link rel="shortcut icon" href="./img/favicon.ico">    </head>    <body>        <div class="wrapper" id="top">            <header class="header">    <div class="container">        <div class="header__body">            <a class="header__logo" href="#top">                <picture><source srcset="./img/logo.svg" type="image/webp"><img class="header__logo-img" src="./img/logo.svg" alt=""></picture>            </a>            <nav class="header__nav">                <a class="header__nav-link" href="#">Home</a>                <a class="header__nav-link" href="#">Recipes</a>                <a class="header__nav-link" href="#">Article</a>                <a class="header__nav-link" href="#">Contact</a>                <a class="header__nav-link" href="#">Purchase</a>            </nav>            <div class="header__search">                <picture><source srcset="./img/search.svg" type="image/webp"><img class="header__search-icon" src="./img/search.svg" alt=""></picture>            </div>            <div class="header__mobile">                <span></span>                <span></span>                <span></span>            </div>        </div>        <form class="header__form" action="#">            <div class="header__form-search">                <button class="header__form-submit" type="submit">                    <picture><source srcset="./img/search.svg" type="image/webp"><img src="./img/search.svg" alt=""></picture>                </button>                <input class="header__form-input" type="search" name="search" placeholder="Search...">                <div class="header__form-close">                    <span></span>                    <span></span>                </div>            </div>        </form>    </div></header>                        <div class="showcase">                <div class="container">                    <div class="showcase__body">                        <a class="showcase__card showcase__card--main" href="#" data-topic="Vehicle">                            <div class="showcase__card-content">                                <p class="showcase__card-date">Rickie Baroch - June 6, 2019</p>                                <h2 class="showcase__card-title">                                    One of Saturn’s largest rings may be newer than anyone                                </h2>                            </div>                            <picture><source srcset="./img/showcase/one.webp" type="image/webp"><img class="showcase__card-image" src="./img/showcase/one.jpg" alt=""></picture>                        </a>                        <a class="showcase__card showcase__card--minor" href="#" data-topic="Vehicle">                            <div class="showcase__card-content">                                <p class="showcase__card-date">Rickie Baroch - June 6, 2019</p>                                <h2 class="showcase__card-title">                                    One of Saturn’s largest rings may be newer than anyone                                </h2>                            </div>                            <picture><source srcset="./img/showcase/two.webp" type="image/webp"><img class="showcase__card-image" src="./img/showcase/two.jpg" alt=""></picture>                        </a>                        <a class="showcase__card showcase__card--minor" href="#" data-topic="Vehicle">                            <div class="showcase__card-content">                                <p class="showcase__card-date">Rickie Baroch - June 6, 2019</p>                                <h2 class="showcase__card-title">                                    One of Saturn’s largest rings may be newer than anyone                                </h2>                            </div>                            <picture><source srcset="./img/showcase/three.webp" type="image/webp"><img class="showcase__card-image" src="./img/showcase/three.jpg" alt=""></picture>                        </a>                        <a class="showcase__card showcase__card--minor" href="#" data-topic="Vehicle">                            <div class="showcase__card-content">                                <p class="showcase__card-date">Rickie Baroch - June 6, 2019</p>                                <h2 class="showcase__card-title">                                    One of Saturn’s largest rings may be newer than anyone                                </h2>                            </div>                            <picture><source srcset="./img/showcase/four.webp" type="image/webp"><img class="showcase__card-image" src="./img/showcase/four.jpg" alt=""></picture>                        </a>                        <a class="showcase__card showcase__card--minor" href="#" data-topic="Vehicle">                            <div class="showcase__card-content">                                <p class="showcase__card-date">Rickie Baroch - June 6, 2019</p>                                <h2 class="showcase__card-title">                                    One of Saturn’s largest rings may be newer than anyone                                </h2>                            </div>                            <picture><source srcset="./img/showcase/five.webp" type="image/webp"><img class="showcase__card-image" src="./img/showcase/five.jpg" alt=""></picture>                        </a>                    </div>                </div>            </div>            <main class="feed">                <div class="feed__item">                                    </div>            </main>            <footer class="footer">    <div class="container">        <div class="footer__body">                    </div>    </div></footer>        </div>        <script src="./js/main.min.js"></script>    </body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="description" content="This is a blog about cars." />
+    <meta name="keywords" content="cars, blog, ford, volkswagen, bmw" />
+    <title>Premium Car | Best Blog About Cars</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./aos/aos.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+  </head>
+  <body>
+    <div class="wrapper" id="top">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <a class="header__logo" href="#top">
+              <picture
+                ><source srcset="./img/logo.svg" type="image/webp" />
+                <img class="header__logo-img" src="./img/logo.svg" alt=""
+              /></picture>
+            </a>
+            <nav class="header__nav">
+              <a class="header__nav-link" href="#">Home</a>
+              <a class="header__nav-link" href="#">Recipes</a>
+              <a class="header__nav-link" href="#">Article</a>
+              <a class="header__nav-link" href="#">Contact</a>
+              <a class="header__nav-link" href="#">Purchase</a>
+            </nav>
+            <div class="header__search">
+              <picture
+                ><source srcset="./img/search.svg" type="image/webp" />
+                <img class="header__search-icon" src="./img/search.svg" alt=""
+              /></picture>
+            </div>
+            <div class="header__mobile">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <form class="header__form" action="#">
+            <div class="header__form-search">
+              <button class="header__form-submit" type="submit">
+                <picture
+                  ><source srcset="./img/search.svg" type="image/webp" />
+                  <img src="./img/search.svg" alt=""
+                /></picture>
+              </button>
+              <input
+                class="header__form-input"
+                type="search"
+                name="search"
+                placeholder="Search..."
+              />
+              <div class="header__form-close">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </header>
+
+      <div class="showcase">
+        <div class="container">
+          <div class="showcase__body">
+            <a
+              class="showcase__card showcase__card--main"
+              href="#"
+              data-topic="Vehicle"
+              data-aos="zoom-in-up"
+            >
+              <div class="showcase__card-content">
+                <p class="showcase__card-date">Rickie Baroch - June 6, 2019</p>
+                <h2 class="showcase__card-title">
+                  One of Saturn’s largest rings may be newer than anyone
+                </h2>
+              </div>
+              <picture
+                ><source srcset="./img/showcase/one.webp" type="image/webp" />
+                <img
+                  class="showcase__card-image"
+                  src="./img/showcase/one.jpg"
+                  alt=""
+              /></picture>
+            </a>
+            <a
+              class="showcase__card showcase__card--minor"
+              href="#"
+              data-topic="Vehicle"
+              data-aos="zoom-in-up"
+            >
+              <div class="showcase__card-content">
+                <p class="showcase__card-date">Rickie Baroch - June 6, 2019</p>
+                <h2 class="showcase__card-title">
+                  One of Saturn’s largest rings may be newer than anyone
+                </h2>
+              </div>
+              <picture
+                ><source srcset="./img/showcase/two.webp" type="image/webp" />
+                <img
+                  class="showcase__card-image"
+                  src="./img/showcase/two.jpg"
+                  alt=""
+              /></picture>
+            </a>
+            <a
+              class="showcase__card showcase__card--minor"
+              href="#"
+              data-topic="Vehicle"
+              data-aos="zoom-in-up"
+            >
+              <div class="showcase__card-content">
+                <p class="showcase__card-date">Rickie Baroch - June 6, 2019</p>
+                <h2 class="showcase__card-title">
+                  One of Saturn’s largest rings may be newer than anyone
+                </h2>
+              </div>
+              <picture
+                ><source srcset="./img/showcase/three.webp" type="image/webp" />
+                <img
+                  class="showcase__card-image"
+                  src="./img/showcase/three.jpg"
+                  alt=""
+              /></picture>
+            </a>
+            <a
+              class="showcase__card showcase__card--minor"
+              href="#"
+              data-topic="Vehicle"
+              data-aos="zoom-in-up"
+            >
+              <div class="showcase__card-content">
+                <p class="showcase__card-date">Rickie Baroch - June 6, 2019</p>
+                <h2 class="showcase__card-title">
+                  One of Saturn’s largest rings may be newer than anyone
+                </h2>
+              </div>
+              <picture
+                ><source srcset="./img/showcase/four.webp" type="image/webp" />
+                <img
+                  class="showcase__card-image"
+                  src="./img/showcase/four.jpg"
+                  alt=""
+              /></picture>
+            </a>
+            <a
+              class="showcase__card showcase__card--minor"
+              href="#"
+              data-topic="Vehicle"
+              data-aos="zoom-in-up"
+            >
+              <div class="showcase__card-content">
+                <p class="showcase__card-date">Rickie Baroch - June 6, 2019</p>
+                <h2 class="showcase__card-title">
+                  One of Saturn’s largest rings may be newer than anyone
+                </h2>
+              </div>
+              <picture
+                ><source srcset="./img/showcase/five.webp" type="image/webp" />
+                <img
+                  class="showcase__card-image"
+                  src="./img/showcase/five.jpg"
+                  alt=""
+              /></picture>
+            </a>
+          </div>
+        </div>
+      </div>
+      <main class="main">
+        <div class="container">
+          <div class="main__body">
+            <div class="main__feed pag">
+              <div class="main__feed-wrapper pag__wrapper">
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-1.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-1.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-2.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-2.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-3.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-3.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-4.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-4.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-5.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-5.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-6.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-6.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-7.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-7.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-8.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-8.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-9.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-9.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-1.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-1.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-2.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-2.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-3.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-3.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-4.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-4.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-5.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-5.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-6.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-6.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-7.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-7.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-8.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-8.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-9.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-9.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-1.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-1.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-2.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-2.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-3.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-3.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-4.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-4.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-5.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-5.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-6.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-6.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-7.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-7.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-8.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-8.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-9.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-9.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-1.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-1.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-2.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-2.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-3.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-3.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-4.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-4.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-5.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-5.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-6.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-6.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-7.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-7.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-8.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-8.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-9.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-9.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-1.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-1.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-2.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-2.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+                <div class="main__feed-item" data-aos="zoom-in-up">
+                  <a class="main__feed-content" data-topic="Vehicle" href="#">
+                    <h2 class="main__feed-title">
+                      One of Saturn’s largest rings may be newer than anyone
+                    </h2>
+                    <p class="main__feed-date">Rickie Baroch - June 6, 2019</p>
+                    <p class="main__feed-text">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                    </p>
+                  </a>
+                  <picture
+                    ><source
+                      srcset="./img/feed/feed-3.webp"
+                      type="image/webp" />
+                    <img
+                      class="main__feed-img"
+                      src="./img/feed/feed-3.jpg"
+                      alt=""
+                  /></picture>
+                </div>
+              </div>
+              <div
+                class="main__feed-pagination pag__control"
+                data-aos="zoom-in-up"
+              ></div>
+            </div>
+            <aside class="main__aside">
+              <div class="main__bio" data-aos="zoom-in-up">
+                <div class="main__bio-img">
+                  <picture
+                    ><source srcset="./img/aside/bio.webp" type="image/webp" />
+                    <img src="./img/aside/bio.jpg" alt=""
+                  /></picture>
+                </div>
+                <p class="main__bio-name">Leon Hunt</p>
+                <p class="main__bio-about">Food & cooking bloger</p>
+                <p class="main__bio-text">
+                  Hi, I'm Leon. Cooking is the way I express my creative side to
+                  the world. Welcome to my Kitchen Corner on…
+                </p>
+                <a href="#" class="main__bio-cta">Continue Reading</a>
+              </div>
+              <div class="main__popular">
+                <h3 class="main__popular-title" data-aos="zoom-in-up">
+                  Popular posts
+                </h3>
+                <div
+                  class="main__popular-item"
+                  data-topic="Vehicle"
+                  data-aos="zoom-in-up"
+                >
+                  <div class="main__popular-item-img">
+                    <picture
+                      ><source
+                        srcset="./img/aside/popular-img-1.webp"
+                        type="image/webp" />
+                      <img src="./img/aside/popular-img-1.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <a class="main__popular-item-title" href="#">
+                    One of Saturn’s largest rings may be newer than anyone
+                  </a>
+                  <p class="main__populat-item-date">
+                    Rickie Baroch - June 6, 2019
+                  </p>
+                </div>
+                <div
+                  class="main__popular-item"
+                  data-topic="Vehicle"
+                  data-aos="zoom-in-up"
+                >
+                  <div class="main__popular-item-img">
+                    <picture
+                      ><source
+                        srcset="./img/aside/popular-img-2.webp"
+                        type="image/webp" />
+                      <img src="./img/aside/popular-img-2.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <a class="main__popular-item-title" href="#">
+                    One of Saturn’s largest rings may be newer than anyone
+                  </a>
+                  <p class="main__populat-item-date">
+                    Rickie Baroch - June 6, 2019
+                  </p>
+                </div>
+                <div
+                  class="main__popular-item"
+                  data-topic="Vehicle"
+                  data-aos="zoom-in-up"
+                >
+                  <div class="main__popular-item-img">
+                    <picture
+                      ><source
+                        srcset="./img/aside/popular-img-3.webp"
+                        type="image/webp" />
+                      <img src="./img/aside/popular-img-3.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <a class="main__popular-item-title" href="#">
+                    One of Saturn’s largest rings may be newer than anyone
+                  </a>
+                  <p class="main__populat-item-date">
+                    Rickie Baroch - June 6, 2019
+                  </p>
+                </div>
+              </div>
+              <div class="main__instagram" data-aos="zoom-in-up">
+                <h3 class="main__instagram-title">Instagram</h3>
+                <div class="main__instagram-grid">
+                  <div class="main__instagram-img">
+                    <picture
+                      ><source
+                        srcset="./img/aside/insta-1.webp"
+                        type="image/webp" />
+                      <img src="./img/aside/insta-1.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <div class="main__instagram-img">
+                    <picture
+                      ><source
+                        srcset="./img/aside/insta-2.webp"
+                        type="image/webp" />
+                      <img src="./img/aside/insta-2.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <div class="main__instagram-img">
+                    <picture
+                      ><source
+                        srcset="./img/aside/insta-3.webp"
+                        type="image/webp" />
+                      <img src="./img/aside/insta-3.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <div class="main__instagram-img">
+                    <picture
+                      ><source
+                        srcset="./img/aside/insta-4.webp"
+                        type="image/webp" />
+                      <img src="./img/aside/insta-4.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <div class="main__instagram-img">
+                    <picture
+                      ><source
+                        srcset="./img/aside/insta-5.webp"
+                        type="image/webp" />
+                      <img src="./img/aside/insta-5.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <div class="main__instagram-img">
+                    <picture
+                      ><source
+                        srcset="./img/aside/insta-6.webp"
+                        type="image/webp" />
+                      <img src="./img/aside/insta-6.jpg" alt=""
+                    /></picture>
+                  </div>
+                </div>
+                <a class="main__instagram-cta" href="#">
+                  <picture
+                    ><source
+                      srcset="./img/aside/insta-icon.svg"
+                      type="image/webp" />
+                    <img src="./img/aside/insta-icon.svg" alt=""
+                  /></picture>
+                  <span>View Instagram</span>
+                </a>
+              </div>
+              <div class="main__tags" data-aos="zoom-in-up">
+                <h3 class="main__tags-title">Tags</h3>
+                <div class="main__tags-grid">
+                  <a class="main__tags-item" href="#">Business</a>
+                  <a class="main__tags-item" href="#">Freelance</a>
+                  <a class="main__tags-item" href="#">Money</a>
+                  <a class="main__tags-item" href="#">Experience</a>
+                  <a class="main__tags-item" href="#">Lifestyle</a>
+                  <a class="main__tags-item" href="#">SEO</a>
+                  <a class="main__tags-item" href="#">Wordpress</a>
+                  <a class="main__tags-item" href="#">Marketing</a>
+                  <a class="main__tags-item" href="#">UX</a>
+                  <a class="main__tags-item" href="#">Modern</a>
+                  <a class="main__tags-item" href="#">Success</a>
+                  <a class="main__tags-item" href="#">Nature</a>
+                  <a class="main__tags-item" href="#">Productivity</a>
+                  <a class="main__tags-item" href="#">Sales page</a>
+                  <a class="main__tags-item" href="#">Sell</a>
+                  <a class="main__tags-item" href="#">Teamwork</a>
+                  <a class="main__tags-item" href="#">Monetize</a>
+                </div>
+              </div>
+              <div class="main__news" data-aos="zoom-in-up">
+                <h3 class="main__news-title">Email newsletter</h3>
+                <p class="main__news-text">
+                  Sign up to receive email updates and to hear what's going on.
+                </p>
+                <form class="main__news-form" action="#">
+                  <input
+                    class="main__news-input"
+                    type="text"
+                    placeholder="Your name"
+                  />
+                  <input
+                    class="main__news-input"
+                    type="email"
+                    placeholder="Your email address"
+                  />
+                  <input
+                    class="main__news-sub"
+                    type="submit"
+                    value="Subscribe to newsletter"
+                  />
+                </form>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </main>
+
+      <section class="popular">
+        <div class="container">
+          <div class="popular__body">
+            <h2 class="popular__title" data-aos="zoom-in-up">Most popular</h2>
+            <div class="popular__grid">
+              <div class="popular__item" data-aos="zoom-in-up">
+                <div class="popular__img" data-topic="BMW">
+                  <picture
+                    ><source
+                      srcset="./img/popular/popular-1.webp"
+                      type="image/webp" />
+                    <img src="./img/popular/popular-1.jpg" alt=""
+                  /></picture>
+                </div>
+                <a class="popular__text" href="#">
+                  One of Saturn’s largest rings may be newer than anyone
+                </a>
+                <p class="popular__date">Rickie Baroch - June 6, 2019</p>
+              </div>
+              <div class="popular__item" data-aos="zoom-in-up">
+                <div class="popular__img" data-topic="BMW">
+                  <picture
+                    ><source
+                      srcset="./img/popular/popular-2.webp"
+                      type="image/webp" />
+                    <img src="./img/popular/popular-2.jpg" alt=""
+                  /></picture>
+                </div>
+                <a class="popular__text" href="#">
+                  One of Saturn’s largest rings may be newer than anyone
+                </a>
+                <p class="popular__date">Rickie Baroch - June 6, 2019</p>
+              </div>
+              <div class="popular__item" data-aos="zoom-in-up">
+                <div class="popular__img" data-topic="BMW">
+                  <picture
+                    ><source
+                      srcset="./img/popular/popular-3.webp"
+                      type="image/webp" />
+                    <img src="./img/popular/popular-3.jpg" alt=""
+                  /></picture>
+                </div>
+                <a class="popular__text" href="#">
+                  One of Saturn’s largest rings may be newer than anyone
+                </a>
+                <p class="popular__date">Rickie Baroch - June 6, 2019</p>
+              </div>
+              <div class="popular__item" data-aos="zoom-in-up">
+                <div class="popular__img" data-topic="BMW">
+                  <picture
+                    ><source
+                      srcset="./img/popular/popular-4.webp"
+                      type="image/webp" />
+                    <img src="./img/popular/popular-4.jpg" alt=""
+                  /></picture>
+                </div>
+                <a class="popular__text" href="#">
+                  One of Saturn’s largest rings may be newer than anyone
+                </a>
+                <p class="popular__date">Rickie Baroch - June 6, 2019</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="container">
+            <div class="footer__top-body">
+              <div class="footer__top-column">
+                <picture
+                  ><source srcset="./img/logo.svg" type="image/webp" />
+                  <img
+                    src="./img/logo.svg"
+                    alt=""
+                    class="footer__logo"
+                    data-aos="zoom-in-up"
+                /></picture>
+                <p class="footer__top-text" data-aos="zoom-in-up">
+                  Short description about the company Lorem Ipsum is simply
+                  dummy text of the printing and typesetting industry.
+                </p>
+                <div class="footer__media" data-aos="zoom-in-up">
+                  <h3 class="footer__title">Keep in touch</h3>
+                  <div class="footer__media-list">
+                    <a class="footer__media-item" href="#">
+                      <picture
+                        ><source
+                          srcset="./img/media/facebook.svg"
+                          type="image/webp" />
+                        <img src="./img/media/facebook.svg" alt=""
+                      /></picture>
+                    </a>
+                    <a class="footer__media-item" href="#">
+                      <picture
+                        ><source
+                          srcset="./img/media/twitter.svg"
+                          type="image/webp" />
+                        <img src="./img/media/twitter.svg" alt=""
+                      /></picture>
+                    </a>
+                    <a class="footer__media-item" href="#">
+                      <picture
+                        ><source
+                          srcset="./img/media/pinterest.svg"
+                          type="image/webp" />
+                        <img src="./img/media/pinterest.svg" alt=""
+                      /></picture>
+                    </a>
+                    <a class="footer__media-item" href="#">
+                      <picture
+                        ><source
+                          srcset="./img/media/google.svg"
+                          type="image/webp" />
+                        <img src="./img/media/google.svg" alt=""
+                      /></picture>
+                    </a>
+                    <a class="footer__media-item" href="#">
+                      <picture
+                        ><source
+                          srcset="./img/media/insta.svg"
+                          type="image/webp" />
+                        <img src="./img/media/insta.svg" alt=""
+                      /></picture>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__top-column">
+                <div class="footer__recent">
+                  <h3 class="footer__title" data-aos="zoom-in-up">
+                    Recent posts
+                  </h3>
+                  <div class="footer__recent-grid">
+                    <div class="footer__recent-item" data-aos="zoom-in-up">
+                      <div class="footer__recent-img">
+                        <picture
+                          ><source
+                            srcset="./img/footer/recent/recent-1.webp"
+                            type="image/webp" />
+                          <img src="./img/footer/recent/recent-1.jpg" alt=""
+                        /></picture>
+                      </div>
+                      <div>
+                        <a class="footer__recent-text" href="#">
+                          One of Saturn’s largest rings may be newer than…
+                        </a>
+                        <p class="footer__recent-date">
+                          Rickie Baroch - June 6, 2019
+                        </p>
+                      </div>
+                    </div>
+                    <div class="footer__recent-item" data-aos="zoom-in-up">
+                      <div class="footer__recent-img">
+                        <picture
+                          ><source
+                            srcset="./img/footer/recent/recent-2.webp"
+                            type="image/webp" />
+                          <img src="./img/footer/recent/recent-2.jpg" alt=""
+                        /></picture>
+                      </div>
+                      <div>
+                        <a class="footer__recent-text" href="#">
+                          One of Saturn’s largest rings may be newer than…
+                        </a>
+                        <p class="footer__recent-date">
+                          Rickie Baroch - June 6, 2019
+                        </p>
+                      </div>
+                    </div>
+                    <div class="footer__recent-item" data-aos="zoom-in-up">
+                      <div class="footer__recent-img">
+                        <picture
+                          ><source
+                            srcset="./img/footer/recent/recent-3.webp"
+                            type="image/webp" />
+                          <img src="./img/footer/recent/recent-3.jpg" alt=""
+                        /></picture>
+                      </div>
+                      <div>
+                        <a class="footer__recent-text" href="#">
+                          One of Saturn’s largest rings may be newer than…
+                        </a>
+                        <p class="footer__recent-date">
+                          Rickie Baroch - June 6, 2019
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__top-column">
+                <div class="footer__title" data-aos="zoom-in-up">
+                  Newsletter
+                </div>
+                <form class="footer__form" action="#">
+                  <div class="footer__form-input" data-aos="zoom-in-up">
+                    <input
+                      type="text"
+                      name="userName"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div class="footer__form-input" data-aos="zoom-in-up">
+                    <input
+                      type="email"
+                      name="userEmail"
+                      placeholder="Your email address"
+                    />
+                  </div>
+                  <div class="footer__form-sub" data-aos="zoom-in-up">
+                    <input type="submit" value="Subscribe to newsletter" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="footer__bottom-body">
+              <p class="footer__bottom-text">
+                @2019 Logwork. All Right Reserved.
+              </p>
+              <nav class="footer__nav">
+                <a href="#" class="footer__nav-item">Home</a>
+                <a href="#" class="footer__nav-item">Recipes</a>
+                <a href="#" class="footer__nav-item">Article</a>
+                <a href="#" class="footer__nav-item">Contact</a>
+                <a href="#" class="footer__nav-item">Purchase</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/main.min.js"></script>
+    <script src="./aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
