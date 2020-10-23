@@ -837,13 +837,9 @@ h6 {
 }
 
 .main .pag__control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main .pag__control > * + * {
-  margin-left: 10px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns(auto-fill, 40px);
 }
 
 .main .pag__control-item {
@@ -1618,9 +1614,11 @@ h6 {
     width: 30px;
     height: 30px;
     line-height: 30px;
+    font-size: 14px;
   }
-  .main .pag__control > * + * {
-    margin-left: 3px;
+  .main .pag__control {
+    grid-gap: 3px;
+    grid-template-columns(auto-fill, 30px);
   }
 }
 
