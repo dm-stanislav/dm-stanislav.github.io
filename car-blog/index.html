@@ -1512,7 +1512,11 @@
     <script src="./js/main.min.js"></script>
     <script src="./aos/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        once: true,
+        duration: 550,
+        offset: 50,
+      });
     </script>
   </body>
 </html>
