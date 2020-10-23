@@ -1620,7 +1620,7 @@ h6 {
     line-height: 30px;
   }
   .main .pag__control > * + * {
-    margin-left: 5px;
+    margin-left: 3px;
   }
 }
 
