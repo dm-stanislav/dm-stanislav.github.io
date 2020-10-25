@@ -12,9 +12,11 @@
 
 html {
   -webkit-tap-highlight-color:transparent;
+  min-height: 100vh;
 }
 
 body {
+  min-height: 100vh;
   padding: 20px 0;
   font-family: "Open Sans", sans-serif;
   color: #fff;
