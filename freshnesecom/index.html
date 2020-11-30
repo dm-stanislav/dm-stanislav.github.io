@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Freshnesecom | eCommerce</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="./img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="./img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="./img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="./img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="./img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- header-->
+    <header class="header">
+      <div class="header__body">
+        <div class="header__row header__row--top">
+          <div class="header__icon icon-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__col contacts" data-move="991.98,.nav__list,7">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a class="contacts__link" href="#">Chat with us</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__tel" href="tel:+420336775664">+420 336 775 664</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__email" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a>
+              </li>
+            </ul>
+          </div>
+          <nav class="header__nav nav">
+            <button class="nav__close">
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Blog</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">About Us</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Careers</a>
+              </li>
+              <li class="nav__item nav__categories">
+                <button class="nav__link" href="#">Categories</button>
+                <div class="nav__categories--wrapper"></div>
+              </li>
+              <li class="nav__list-wrapper"></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__row header__row--middle">
+          <div class="header__col logo" data-move="991.98,.nav__list,1">
+            <a class="logo__link" href="index.html">
+              <picture>
+                <source srcset="./img/header/logo.svg" type="image/webp">
+                <img class="logo__img" src="./img/header/logo.svg" alt="freshnesecom">
+              </picture>
+            </a>
+          </div>
+          <div class="header__col search">
+            <form class="search__form" action="#">
+              <div class="search__select select">
+                <div class="select__open">
+                  <input class="select__input" name="search_category" type="text" value="all" readonly tabindex="-1">
+                  <button class="select__current" type="button">All categories</button>
+                  <svg class="select__icon" viewBox="0 0 32 32">
+                    <use xlink:href="./img/sprite/sprite.svg#down-arrow-bold"></use>
+                  </svg>
+                </div>
+                <div class="select__list">
+                  <button class="select__item _active" type="button" data-search-category="all">All categories</button>
+                  <button class="select__item" type="button" data-search-category="val_1">Value 1</button>
+                  <button class="select__item" type="button" data-search-category="val_2">Value 2</button>
+                  <button class="select__item" type="button" data-search-category="val_3">Value 3</button>
+                  <button class="select__item" type="button" data-search-category="val_4">Value 4</button>
+                </div>
+              </div>
+              <div class="search__input query">
+                <input class="query__input" name="search_text" type="text" placeholder="Search Products, categories ...">
+                <button class="query__submit" type="submit">
+                  <svg class="query__icon" viewBox="0 0 32 32">
+                    <use xlink:href="./img/sprite/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="header__col user">
+            <div class="user__signin" data-move="991.98,.header__row--top,1">
+              <a href="#">
+                <svg viewBox="0 0 32 32">
+                  <use xlink:href="./img/sprite/sprite.svg#user"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="user__cart" data-move="991.98,.header__row--top,3">
+              <a href="#" data-cart="4">
+                <svg viewBox="0 0 32 32">
+                  <use xlink:href="./img/sprite/sprite.svg#cart"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__row header__row--bottom">
+          <div class="header__col categories">
+            <ul class="categories__list" data-move="991.98,.nav__list-wrapper,1">
+              <li class="categories__item">
+                <a class="categories__link" href="#">Bakery</a>
+                <svg class="categories__arrow" viewBox="0 0 32 32">
+                  <use xlink:href="./img/sprite/sprite.svg#down-arrow"></use>
+                </svg>
+                <ul class="categories__sublist sublist sublist">
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 1</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 2</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="categories__item">
+                <a class="categories__link" href="#">Fruit and vegetables</a>
+                <svg class="categories__arrow" viewBox="0 0 32 32">
+                  <use xlink:href="./img/sprite/sprite.svg#down-arrow"></use>
+                </svg>
+                <ul class="categories__sublist sublist">
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 1</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 2</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="categories__item">
+                <a class="categories__link" href="#">Meat and fish</a>
+                <svg class="categories__arrow" viewBox="0 0 32 32">
+                  <use xlink:href="./img/sprite/sprite.svg#down-arrow"></use>
+                </svg>
+                <ul class="categories__sublist sublist">
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 1</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 2</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="categories__item">
+                <a class="categories__link" href="#">Drinks</a>
+                <svg class="categories__arrow" viewBox="0 0 32 32">
+                  <use xlink:href="./img/sprite/sprite.svg#down-arrow"></use>
+                </svg>
+                <ul class="categories__sublist sublist">
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 1</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 2</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="categories__item">
+                <a class="categories__link" href="#">Kitchen</a>
+                <svg class="categories__arrow" viewBox="0 0 32 32">
+                  <use xlink:href="./img/sprite/sprite.svg#down-arrow"></use>
+                </svg>
+                <ul class="categories__sublist sublist">
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 1</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 2</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="categories__item">
+                <a class="categories__link" href="#">Special nutrition</a>
+                <svg class="categories__arrow" viewBox="0 0 32 32">
+                  <use xlink:href="./img/sprite/sprite.svg#down-arrow"></use>
+                </svg>
+                <ul class="categories__sublist sublist">
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 1</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 2</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="categories__item">
+                <a class="categories__link" href="#">Baby</a>
+                <svg class="categories__arrow" viewBox="0 0 32 32">
+                  <use xlink:href="./img/sprite/sprite.svg#down-arrow"></use>
+                </svg>
+                <ul class="categories__sublist sublist">
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 1</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 2</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="categories__item">
+                <a class="categories__link" href="#">Pharmacy</a>
+                <svg class="categories__arrow" viewBox="0 0 32 32">
+                  <use xlink:href="./img/sprite/sprite.svg#down-arrow"></use>
+                </svg>
+                <ul class="categories__sublist sublist">
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 1</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 2</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#">Value 3</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header> <!-- /header-->
+    <main>
+      <section class="row row--banner">
+        <div class="row__aside">
+          <h2 class="row__title">Category menu</h2>
+          <ul class="row__list">
+            <li class="row__list-item">
+              <a href="#">Bakery</a>
+            </li>
+            <li class="row__list-item">
+              <a href="#">Fruit and vegetables</a>
+            </li>
+            <li class="row__list-item">
+              <a href="#">Meat and fish</a>
+            </li>
+            <li class="row__list-item">
+              <a href="#">Drinks</a>
+            </li>
+            <li class="row__list-item">
+              <a href="#">Kitchen</a>
+            </li>
+            <li class="row__list-item row__list-item--more">
+              <a href="#">More categories <svg viewBox="0 0 32 32">
+                  <use xlink:href="./img/sprite/sprite.svg#right-arrow"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="row__content">
+          <div class="row__item banner">
+            <div class="banner__body">
+              <h3 class="banner__suptitle">Banner subfocus</h3>
+              <h2 class="banner__title">Space for heading</h2>
+              <a class="banner__cta" href="#">Read recepies <svg viewBox="0 0 32 32">
+                  <use xlink:href="./img/sprite/sprite.svg#right-arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="banner__bg"></div>
+          </div>
+          <div class="row__item banner">
+            <div class="banner__body">
+              <h3 class="banner__suptitle">Banner subfocus</h3>
+              <h2 class="banner__title">Space for heading</h2>
+              <a class="banner__cta" href="#">Read recepies <svg viewBox="0 0 32 32">
+                  <use xlink:href="./img/sprite/sprite.svg#right-arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="banner__bg"></div>
+          </div>
+        </div>
+      </section>
+      <section class="row row--products">
+        <div class="row__aside">
+          <h2 class="row__title">Best selling products</h2>
+          <ul class="row__list">
+            <li class="row__list-item">
+              <a href="#">Kitchen</a>
+            </li>
+            <li class="row__list-item">
+              <a href="#">Meat and fish</a>
+            </li>
+            <li class="row__list-item">
+              <a href="#">Special nutrition</a>
+            </li>
+            <li class="row__list-item">
+              <a href="#">Pharmacy</a>
+            </li>
+            <li class="row__list-item">
+              <a href="#">Baby</a>
+            </li>
+            <li class="row__list-item row__list-item--more">
+              <a href="#">More products <svg viewBox="0 0 32 32">
+                  <use xlink:href="./img/sprite/sprite.svg#right-arrow"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="row__content">
+          <div class="row__item item">
+            <div class="item__body">
+              <div class="item__img">
+                <picture>
+                  <source srcset="./img/product-bg.webp" type="image/webp">
+                  <img src="./img/product-bg.png" alt="">
+                </picture>
+              </div>
+              <h3 class="item__title">Product Title</h3>
+              <p class="item__text">Space for a small product description </p>
+              <div class="item__info">
+                <p class="item__price">1.48 USD</p>
+                <a class="item__cta" href="#">Buy now</a>
+              </div>
+            </div>
+          </div>
+          <div class="row__item item _discount" data-discount="-36%">
+            <div class="item__body">
+              <div class="item__img">
+                <picture>
+                  <source srcset="./img/product-bg.webp" type="image/webp">
+                  <img src="./img/product-bg.png" alt="">
+                </picture>
+              </div>
+              <h3 class="item__title">Product Title</h3>
+              <p class="item__text">Space for a small product description </p>
+              <div class="item__info">
+                <p class="item__price">1.48 USD<span>48.56</span>
+                </p>
+                <a class="item__cta" href="#">Buy now</a>
+              </div>
+            </div>
+          </div>
+          <div class="row__item item _discount" data-discount="-36%">
+            <div class="item__body">
+              <div class="item__img">
+                <picture>
+                  <source srcset="./img/product-bg.webp" type="image/webp">
+                  <img src="./img/product-bg.png" alt="">
+                </picture>
+              </div>
+              <h3 class="item__title">Product Title</h3>
+              <p class="item__text">Space for a small product description </p>
+              <div class="item__info">
+                <p class="item__price">1.48 USD<span>48.56</span>
+                </p>
+                <a class="item__cta" href="#">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row row--products">
+        <div class="row__aside">
+          <h2 class="row__title">Best selling products</h2>
+          <ul class="row__list">
+            <li class="row__list-item">
+              <a href="#">Kitchen</a>
+            </li>
+            <li class="row__list-item">
+              <a href="#">Meat and fish</a>
+            </li>
+            <li class="row__list-item">
+              <a href="#">Special nutrition</a>
+            </li>
+            <li class="row__list-item">
+              <a href="#">Pharmacy</a>
+            </li>
+            <li class="row__list-item">
+              <a href="#">Baby</a>
+            </li>
+            <li class="row__list-item row__list-item--more">
+              <a href="#">More products <svg viewBox="0 0 32 32">
+                  <use xlink:href="./img/sprite/sprite.svg#right-arrow"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="row__content">
+          <div class="row__item item">
+            <div class="item__body">
+              <div class="item__img">
+                <picture>
+                  <source srcset="./img/product-bg.webp" type="image/webp">
+                  <img src="./img/product-bg.png" alt="">
+                </picture>
+              </div>
+              <h3 class="item__title">Product Title</h3>
+              <p class="item__text">Space for a small product description </p>
+              <div class="item__info">
+                <p class="item__price">1.48 USD</p>
+                <a class="item__cta" href="#">Buy now</a>
+              </div>
+            </div>
+          </div>
+          <div class="row__item item _discount" data-discount="-36%">
+            <div class="item__body">
+              <div class="item__img">
+                <picture>
+                  <source srcset="./img/product-bg.webp" type="image/webp">
+                  <img src="./img/product-bg.png" alt="">
+                </picture>
+              </div>
+              <h3 class="item__title">Product Title</h3>
+              <p class="item__text">Space for a small product description </p>
+              <div class="item__info">
+                <p class="item__price">1.48 USD<span>48.56</span>
+                </p>
+                <a class="item__cta" href="#">Buy now</a>
+              </div>
+            </div>
+          </div>
+          <div class="row__item item _discount" data-discount="-36%">
+            <div class="item__body">
+              <div class="item__img">
+                <picture>
+                  <source srcset="./img/product-bg.webp" type="image/webp">
+                  <img src="./img/product-bg.png" alt="">
+                </picture>
+              </div>
+              <h3 class="item__title">Product Title</h3>
+              <p class="item__text">Space for a small product description </p>
+              <div class="item__info">
+                <p class="item__price">1.48 USD<span>48.56</span>
+                </p>
+                <a class="item__cta" href="#">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row row--slider">
+        <div class="row__header">
+          <h2 class="row__title">Our costumers say</h2>
+          <a class="row__cta" href="#">Button <svg viewBox="0 0 32 32">
+              <use xlink:href="./img/sprite/sprite.svg#right-arrow"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="row__content">
+          <div class="row__container swiper-container">
+            <div class="row__wrapper swiper-wrapper">
+              <div class="row__slide swiper-slide slide">
+                <div class="slide__body">
+                  <p class="slide__text">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                  <p class="slide__name">Name and Surname</p>
+                  <div class="slide__img">
+                    <picture>
+                      <source srcset="./img/slide-img.webp" type="image/webp">
+                      <img src="./img/slide-img.jpg" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="row__slide swiper-slide slide">
+                <div class="slide__body">
+                  <p class="slide__text">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                  <p class="slide__name">Name and Surname</p>
+                  <div class="slide__img">
+                    <picture>
+                      <source srcset="./img/slide-img.webp" type="image/webp">
+                      <img src="./img/slide-img.jpg" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="row__slide swiper-slide slide">
+                <div class="slide__body">
+                  <p class="slide__text">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                  <p class="slide__name">Name and Surname</p>
+                  <div class="slide__img">
+                    <picture>
+                      <source srcset="./img/slide-img.webp" type="image/webp">
+                      <img src="./img/slide-img.jpg" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="row__slide swiper-slide slide">
+                <div class="slide__body">
+                  <p class="slide__text">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                  <p class="slide__name">Name and Surname</p>
+                  <div class="slide__img">
+                    <picture>
+                      <source srcset="./img/slide-img.webp" type="image/webp">
+                      <img src="./img/slide-img.jpg" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="row__slide swiper-slide slide">
+                <div class="slide__body">
+                  <p class="slide__text">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                  <p class="slide__name">Name and Surname</p>
+                  <div class="slide__img">
+                    <picture>
+                      <source srcset="./img/slide-img.webp" type="image/webp">
+                      <img src="./img/slide-img.jpg" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="row__slide swiper-slide slide">
+                <div class="slide__body">
+                  <p class="slide__text">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                  <p class="slide__name">Name and Surname</p>
+                  <div class="slide__img">
+                    <picture>
+                      <source srcset="./img/slide-img.webp" type="image/webp">
+                      <img src="./img/slide-img.jpg" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="row__slide swiper-slide slide">
+                <div class="slide__body">
+                  <p class="slide__text">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                  <p class="slide__name">Name and Surname</p>
+                  <div class="slide__img">
+                    <picture>
+                      <source srcset="./img/slide-img.webp" type="image/webp">
+                      <img src="./img/slide-img.jpg" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="row__slide swiper-slide slide">
+                <div class="slide__body">
+                  <p class="slide__text">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                  <p class="slide__name">Name and Surname</p>
+                  <div class="slide__img">
+                    <picture>
+                      <source srcset="./img/slide-img.webp" type="image/webp">
+                      <img src="./img/slide-img.jpg" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="row__slide swiper-slide slide">
+                <div class="slide__body">
+                  <p class="slide__text">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                  <p class="slide__name">Name and Surname</p>
+                  <div class="slide__img">
+                    <picture>
+                      <source srcset="./img/slide-img.webp" type="image/webp">
+                      <img src="./img/slide-img.jpg" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row__prev swiper-button-prev">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="./img/sprite/sprite.svg#slider-prev"></use>
+              </svg>
+            </div>
+            <div class="row__next swiper-button-next">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="./img/sprite/sprite.svg#slider-next"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main> <!-- footer-->
+    <footer class="footer">
+      <div class="footer__body"></div>
+    </footer> <!-- /footer-->
+  </div>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>
