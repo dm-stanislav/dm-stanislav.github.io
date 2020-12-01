@@ -232,6 +232,7 @@ new Swiper('.swiper-container', {
   loop: true,
   spaceBetween: 32,
   slidesPerView: 'auto',
+  grabCursor: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
