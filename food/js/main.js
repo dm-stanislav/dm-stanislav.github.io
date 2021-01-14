@@ -389,12 +389,14 @@ function openMenu() {
   document.querySelector('.menu-icon').classList.add('_active');
   document.querySelector('.menu__body').classList.add('_active');
   document.querySelector('.wrapper').classList.add('_menu');
+  document.body.style.overflow = 'hidden';
 }
 
 function closeMenu() {
   document.querySelector('.menu-icon').classList.remove('_active');
   document.querySelector('.menu__body').classList.remove('_active');
   document.querySelector('.wrapper').classList.remove('_menu');
+  document.body.style.overflow = 'visible';
 }
 
 document.querySelector('.menu-icon').addEventListener('click', function () {
