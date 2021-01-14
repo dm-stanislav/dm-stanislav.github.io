@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Food Delivery in Kovel</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="./img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="./img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="./img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="./img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="./img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper" id="top">
+    <header class="header _animate">
+      <div class="header__body _container">
+        <div class="header__col header__col--menu">
+          <div class="header__menu">
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Payment</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">About us</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="header__col header__col--logo">
+          <a class="header__logo" href="#top">
+            <picture>
+              <source srcset="./img/logo.webp" type="image/webp">
+              <img src="./img/logo.png" alt="">
+            </picture>
+          </a>
+        </div>
+        <div class="header__col">
+          <div class="header__contact contact" data-move="890,.header__col--menu .menu__body,2">
+            <ul class="contact__list">
+              <li class="contact__schedule">Daily 11am - 9pm</li>
+              <li class="contact__number number">
+                <a class="number__link" href="tel:0800330898">
+                  <span class="number__icon">
+                    <svg viewBox="0 0 32 32">
+                      <use xlink:href="./img/sprite/sprite.svg#tel"></use>
+                    </svg>
+                  </span>
+                  <span class="number__text">0 800 33 08 98</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__icon menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <section class="showcase">
+      <div class="showcase__icons icons _animate">
+        <svg class="icons__item icons__item--1" viewBox="0 0 32 32">
+          <use xlink:href="./img/sprite/sprite.svg#icon-1"></use>
+        </svg>
+        <svg class="icons__item icons__item--2" viewBox="0 0 32 32">
+          <use xlink:href="./img/sprite/sprite.svg#icon-2"></use>
+        </svg>
+        <svg class="icons__item icons__item--3" viewBox="0 0 32 32">
+          <use xlink:href="./img/sprite/sprite.svg#icon-3"></use>
+        </svg>
+        <svg class="icons__item icons__item--4" viewBox="0 0 32 32">
+          <use xlink:href="./img/sprite/sprite.svg#icon-4"></use>
+        </svg>
+      </div>
+      <div class="showcase__vegetables vegetables _animate">
+        <div class="vegetables__parallax">
+          <div class="vegetables__img _bg" data-depth="0.35">
+            <picture>
+              <source srcset="./img/showcase/vegetables.webp" type="image/webp">
+              <img src="./img/showcase/vegetables.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="showcase__body _container">
+        <div class="showcase__content content">
+          <div class="content__item content__item--title">
+            <h2 class="showcase__title section-title _animate">Food delivery in Kovel</h2>
+          </div>
+          <div class="content__item">
+            <p class="showcase__text _animate">If you decide to relax or have unexpected guests, call us. We make sure that your vacation is comfortable, enjoyable and delicious</p>
+          </div>
+        </div>
+        <div class="showcase__pizza pizza _animate">
+          <div class="pizza__img _bgz">
+            <picture>
+              <source srcset="./img/showcase/pizza.webp" type="image/webp">
+              <img src="./img/showcase/pizza.png" alt="">
+            </picture>
+          </div>
+          <div class="pizza__offers offers">
+            <div class="offers__item offers__item--1 _active">
+              <div class="offers__icon">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="offers__stripe">
+                <picture>
+                  <source srcset="./img/showcase/stripe.webp" type="image/webp">
+                  <img src="./img/showcase/stripe.png" alt="">
+                </picture>
+              </div>
+              <div class="offers__text">When ordering from <span>700 UAH</span>, delivery is free</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="popular">
+      <div class="popular__body _container">
+        <div class="popular__title _animate">
+          <h2 class="section-title">Popular dishes</h2>
+        </div>
+        <div class="popular__main">
+          <div class="popular__icons icons">
+            <picture>
+              <source srcset="./img/popular/icon-1.svg" type="image/webp">
+              <img class="icons__item icons__item--1" src="./img/popular/icon-1.svg" alt="">
+            </picture>
+            <img class="icons__item icons__item--2" src="./img/popular/icon-2.svg" alt="">
+          </div>
+          <svg class="popular__gradient" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <lineargradient id="item-gradient" spreadMethod="pad" x1="0%" y1="0%" x2="59%" y2="125%">
+                <stop offset="0" style="stop-color:rgb(245, 134, 86);stop-opacity:1;"></stop>
+                <stop offset="9%" style="stop-color:rgb(245, 134, 86);stop-opacity:1;"></stop>
+                <stop offset="93%" style="stop-color:rgb(254, 86, 38);stop-opacity:1;"></stop>
+                <stop offset="100" style="stop-color:rgb(255, 87, 39);stop-opacity:1;"></stop>
+              </lineargradient>
+            </defs>
+            <rect width="300" height="300" y="0" x="0" fill="url(#item-gradient)"></rect>
+          </svg>
+          <svg class="popular__path">
+            <clippath id="item-path" clipPathUnits="objectBoundingBox">
+              <path d="M0.004,0.036 C0.004,0.017,0.028,0.002,0.058,0.002 H0.95 C0.98,0.002,1,0.017,1,0.036 V0.912 C1,0.93,0.98,0.945,0.95,0.945 H0.662 C0.647,0.945,0.632,0.949,0.62,0.955 L0.561,0.989 C0.529,1,0.479,1,0.447,0.989 L0.387,0.955 C0.376,0.949,0.361,0.945,0.346,0.945 H0.058 C0.028,0.945,0.004,0.93,0.004,0.912 V0.036"></path>
+            </clippath>
+          </svg>
+          <div class="popular__tabs tabs">
+            <div class="tabs__header _animate">
+              <div class="tabs__heading _active" data-tab="tab-1">Pizza</div>
+              <div class="tabs__heading" data-tab="tab-2">Sushi</div>
+              <div class="tabs__heading" data-tab="tab-3">Salad</div>
+              <div class="tabs__heading" data-tab="tab-4">Dessert</div>
+              <div class="tabs__heading" data-tab="tab-5">Drinks</div>
+            </div>
+            <div class="tabs__body _animate">
+              <div class="tabs__content tab-1 _active grid">
+                <div class="grid__item item">
+                  <div class="item__content">
+                    <picture>
+                      <source srcset="./img/popular/pizza-1.webp" type="image/webp">
+                      <img class="item__img" src="./img/popular/pizza-1.png" alt="">
+                    </picture>
+                    <div class="item__info">
+                      <div class="item__title">Quattro formaggi</div>
+                      <div class="item__size">32cm</div>
+                    </div>
+                    <div class="item__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
+                    <div class="item__price">119 UAH</div>
+                    <a class="item__cta" href="#">
+                      <svg class="item__icon" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                      <svg class="item__hover" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid__item item">
+                  <div class="item__content">
+                    <picture>
+                      <source srcset="./img/popular/pizza-2.webp" type="image/webp">
+                      <img class="item__img" src="./img/popular/pizza-2.png" alt="">
+                    </picture>
+                    <div class="item__info">
+                      <div class="item__title">Quattro formaggi</div>
+                      <div class="item__size">32cm</div>
+                    </div>
+                    <div class="item__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
+                    <div class="item__price">119 UAH</div>
+                    <a class="item__cta" href="#">
+                      <svg class="item__icon" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                      <svg class="item__hover" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid__item item _hit">
+                  <div class="item__content">
+                    <picture>
+                      <source srcset="./img/popular/pizza-3.webp" type="image/webp">
+                      <img class="item__img" src="./img/popular/pizza-3.png" alt="">
+                    </picture>
+                    <div class="item__info">
+                      <div class="item__title">Quattro formaggi</div>
+                      <div class="item__size">32cm</div>
+                    </div>
+                    <div class="item__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
+                    <div class="item__price">119 UAH</div>
+                    <a class="item__cta" href="#">
+                      <svg class="item__icon" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                      <svg class="item__hover" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid__item item">
+                  <div class="item__content">
+                    <picture>
+                      <source srcset="./img/popular/pizza-4.webp" type="image/webp">
+                      <img class="item__img" src="./img/popular/pizza-4.png" alt="">
+                    </picture>
+                    <div class="item__info">
+                      <div class="item__title">Quattro formaggi</div>
+                      <div class="item__size">32cm</div>
+                    </div>
+                    <div class="item__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
+                    <div class="item__price">119 UAH</div>
+                    <a class="item__cta" href="#">
+                      <svg class="item__icon" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                      <svg class="item__hover" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid__item item">
+                  <div class="item__content">
+                    <picture>
+                      <source srcset="./img/popular/pizza-5.webp" type="image/webp">
+                      <img class="item__img" src="./img/popular/pizza-5.png" alt="">
+                    </picture>
+                    <div class="item__info">
+                      <div class="item__title">Quattro formaggi</div>
+                      <div class="item__size">32cm</div>
+                    </div>
+                    <div class="item__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
+                    <div class="item__price">119 UAH</div>
+                    <a class="item__cta" href="#">
+                      <svg class="item__icon" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                      <svg class="item__hover" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid__item item">
+                  <div class="item__content">
+                    <picture>
+                      <source srcset="./img/popular/pizza-6.webp" type="image/webp">
+                      <img class="item__img" src="./img/popular/pizza-6.png" alt="">
+                    </picture>
+                    <div class="item__info">
+                      <div class="item__title">Quattro formaggi</div>
+                      <div class="item__size">32cm</div>
+                    </div>
+                    <div class="item__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
+                    <div class="item__price">119 UAH</div>
+                    <a class="item__cta" href="#">
+                      <svg class="item__icon" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                      <svg class="item__hover" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid__item item">
+                  <div class="item__content">
+                    <picture>
+                      <source srcset="./img/popular/pizza-7.webp" type="image/webp">
+                      <img class="item__img" src="./img/popular/pizza-7.png" alt="">
+                    </picture>
+                    <div class="item__info">
+                      <div class="item__title">Quattro formaggi</div>
+                      <div class="item__size">32cm</div>
+                    </div>
+                    <div class="item__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
+                    <div class="item__price">119 UAH</div>
+                    <a class="item__cta" href="#">
+                      <svg class="item__icon" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                      <svg class="item__hover" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid__item item">
+                  <div class="item__content">
+                    <picture>
+                      <source srcset="./img/popular/pizza-8.webp" type="image/webp">
+                      <img class="item__img" src="./img/popular/pizza-8.png" alt="">
+                    </picture>
+                    <div class="item__info">
+                      <div class="item__title">Quattro formaggi</div>
+                      <div class="item__size">32cm</div>
+                    </div>
+                    <div class="item__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
+                    <div class="item__price">119 UAH</div>
+                    <a class="item__cta" href="#">
+                      <svg class="item__icon" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                      <svg class="item__hover" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__content tab-2 grid">
+                <div class="grid__item item">
+                  <div class="item__content">
+                    <picture>
+                      <source srcset="./img/popular/pizza-5.webp" type="image/webp">
+                      <img class="item__img" src="./img/popular/pizza-5.png" alt="">
+                    </picture>
+                    <div class="item__info">
+                      <div class="item__title">Quattro formaggi</div>
+                      <div class="item__size">32cm</div>
+                    </div>
+                    <div class="item__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
+                    <div class="item__price">119 UAH</div>
+                    <a class="item__cta" href="#">
+                      <svg class="item__icon" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                      <svg class="item__hover" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__content tab-3 grid">
+                <div class="grid__item item">
+                  <div class="item__content">
+                    <picture>
+                      <source srcset="./img/popular/pizza-6.webp" type="image/webp">
+                      <img class="item__img" src="./img/popular/pizza-6.png" alt="">
+                    </picture>
+                    <div class="item__info">
+                      <div class="item__title">Quattro formaggi</div>
+                      <div class="item__size">32cm</div>
+                    </div>
+                    <div class="item__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
+                    <div class="item__price">119 UAH</div>
+                    <a class="item__cta" href="#">
+                      <svg class="item__icon" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                      <svg class="item__hover" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__content tab-4 grid">
+                <div class="grid__item item">
+                  <div class="item__content">
+                    <picture>
+                      <source srcset="./img/popular/pizza-7.webp" type="image/webp">
+                      <img class="item__img" src="./img/popular/pizza-7.png" alt="">
+                    </picture>
+                    <div class="item__info">
+                      <div class="item__title">Quattro formaggi</div>
+                      <div class="item__size">32cm</div>
+                    </div>
+                    <div class="item__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
+                    <div class="item__price">119 UAH</div>
+                    <a class="item__cta" href="#">
+                      <svg class="item__icon" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                      <svg class="item__hover" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__content tab-5 grid">
+                <div class="grid__item item">
+                  <div class="item__content">
+                    <picture>
+                      <source srcset="./img/popular/pizza-8.webp" type="image/webp">
+                      <img class="item__img" src="./img/popular/pizza-8.png" alt="">
+                    </picture>
+                    <div class="item__info">
+                      <div class="item__title">Quattro formaggi</div>
+                      <div class="item__size">32cm</div>
+                    </div>
+                    <div class="item__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
+                    <div class="item__price">119 UAH</div>
+                    <a class="item__cta" href="#">
+                      <svg class="item__icon" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                      <svg class="item__hover" viewBox="0 0 32 32">
+                        <use xlink:href="./img/sprite/sprite.svg#buy-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="popular__more" href="#">
+            <svg viewBox="0 0 32 32">
+              <use xlink:href="./img/sprite/sprite.svg#refresh"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="gallery _animate">
+      <picture>
+        <source srcset="./img/gallery/icon.svg" type="image/webp">
+        <img class="gallery__icon" src="./img/gallery/icon.svg" alt="">
+      </picture>
+      <div class="gallery__slider slider">
+        <div class="slider__container swiper-container" id="gallery-slider">
+          <div class="slider__wrapper swiper-wrapper">
+            <div class="slider__slide slide swiper-slide">
+              <div class="slide__img _bg">
+                <picture>
+                  <source srcset="./img/gallery/slide-1.webp" type="image/webp">
+                  <img src="./img/gallery/slide-1.jpg" alt="">
+                </picture>
+              </div>
+            </div>
+            <div class="slider__slide slide swiper-slide">
+              <div class="slide__img _bg">
+                <picture>
+                  <source srcset="./img/gallery/slide-2.webp" type="image/webp">
+                  <img src="./img/gallery/slide-2.jpg" alt="">
+                </picture>
+              </div>
+            </div>
+            <div class="slider__slide slide swiper-slide">
+              <div class="slide__img _bg">
+                <picture>
+                  <source srcset="./img/gallery/slide-3.webp" type="image/webp">
+                  <img src="./img/gallery/slide-3.jpg" alt="">
+                </picture>
+              </div>
+            </div>
+            <div class="slider__slide slide swiper-slide">
+              <div class="slide__img _bg">
+                <picture>
+                  <source srcset="./img/gallery/slide-4.webp" type="image/webp">
+                  <img src="./img/gallery/slide-4.jpg" alt="">
+                </picture>
+              </div>
+            </div>
+            <div class="slider__slide slide swiper-slide">
+              <div class="slide__img _bg">
+                <picture>
+                  <source srcset="./img/gallery/slide-5.webp" type="image/webp">
+                  <img src="./img/gallery/slide-5.jpg" alt="">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="call">
+      <div class="call__vegetables _animate">
+        <div class="call__parallax" data-depth="0.2">
+          <picture>
+            <source srcset="./img/call/vegitable.webp" type="image/webp">
+            <img src="./img/call/vegitable.png" alt="">
+          </picture>
+        </div>
+      </div>
+      <div class="call__icons icons _animate">
+        <picture>
+          <source srcset="./img/call/icon-1.svg" type="image/webp">
+          <img class="icons__item icons__item--1" src="./img/call/icon-1.svg" alt="">
+        </picture>
+        <img class="icons__item icons__item--2" src="./img/call/icon-2.svg" alt="">
+        <img class="icons__item icons__item--3" src="./img/call/icon-3.svg" alt="">
+      </div>
+      <div class="call__body _container">
+        <div class="call__title _animate">
+          <h2 class="section-title">Fill out the form and we will call you</h2>
+        </div>
+        <div class="call__form form _animate">
+          <form class="form__body" action="#" id="callBack">
+            <div class="form__row">
+              <div class="form__item">
+                <input class="form__input _req" id="userName" type="text" name="userName" tabindex="1" placeholder="Your name">
+              </div>
+              <div class="form__item _tel">
+                <input class="form__input _req" id="userTel" type="text" name="userTel" tabindex="2" placeholder="Phone number">
+              </div>
+              <div class="form__item">
+                <button class="form__button" type="submit">Call back <svg viewBox="0 0 32 32">
+                    <use xlink:href="./img/sprite/sprite.svg#submit"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="call__car _bg _animate">
+          <picture>
+            <source srcset="./img/call/car.webp" type="image/webp">
+            <img src="./img/call/car.png" alt="">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__body _container">
+        <div class="footer__col">
+          <div class="footer__text">© Classic Family Restaurant</div>
+        </div>
+        <div class="footer__col">
+          <a class="footer__logo" href="#">
+            <picture>
+              <source srcset="./img/logo.webp" type="image/webp">
+              <img src="./img/logo.png" alt="">
+            </picture>
+          </a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__tag">Made with delight by <span>harmuder</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>
