@@ -394,7 +394,7 @@ function openMenu() {
 function closeMenu() {
   document.querySelector('.menu-icon').classList.remove('_active');
   document.querySelector('.menu__body').classList.remove('_active');
-  document.querySelector('.wrapper').remove('_menu');
+  document.querySelector('.wrapper').classList.remove('_menu');
 }
 
 document.querySelector('.menu-icon').addEventListener('click', function () {
