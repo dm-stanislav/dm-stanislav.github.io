@@ -1441,7 +1441,7 @@ h6 {
     }
 }
 @media (max-width: 890px) {
-    body::after {
+    .wrapper::after {
         content: "";
         position: absolute;
         top: 0;
