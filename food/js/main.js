@@ -529,19 +529,18 @@ var gallery = new Swiper('#gallery-slider', {
   function headerHandler() {
     var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (window.pageYOffset > 10) {
+    if (window.pageYOffset > 15) {
       duration = window.getComputedStyle(header).getPropertyValue('animation-duration');
       duration = parseFloat(duration) * 1000;
+      
+      if (!allowShrinking) return;
+      allowShrinking = false;
+      header.classList.add('_shrinked');
+      header.style.animationName = 'headerIn';
+      setTimeout(function () {
+        return allowShrinking = true;
+      }, duration);
 
-      if (currentScroll < initialScroll) {
-        if (!allowShrinking) return;
-        allowShrinking = false;
-        header.classList.add('_shrinked');
-        header.style.animationName = 'headerIn';
-        setTimeout(function () {
-          return allowShrinking = true;
-        }, duration);
-      }
     } else {
       duration = window.getComputedStyle(header).getPropertyValue('animation-duration');
       duration = parseFloat(duration) * 1000;
