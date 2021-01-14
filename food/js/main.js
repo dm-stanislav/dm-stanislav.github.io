@@ -546,6 +546,7 @@ var gallery = new Swiper('#gallery-slider', {
       duration = parseFloat(duration) * 1000;
       setTimeout(function () {
         header.classList.remove('_shrinked');
+        header.style.animationName = 'none';
       }, duration);
     }
 
