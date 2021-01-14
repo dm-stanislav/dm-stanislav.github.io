@@ -541,14 +541,6 @@ var gallery = new Swiper('#gallery-slider', {
         setTimeout(function () {
           return allowShrinking = true;
         }, duration);
-      } else {
-        if (!allowShrinking) return;
-        allowShrinking = false;
-        header.style.animationName = 'headerOut';
-        setTimeout(function () {
-          header.classList.remove('_shrinked');
-          allowShrinking = true;
-        }, duration);
       }
     } else {
       duration = window.getComputedStyle(header).getPropertyValue('animation-duration');
