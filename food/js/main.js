@@ -270,10 +270,10 @@ document.addEventListener('DOMContentLoaded', function () {
       var itemHeight = item.offsetHeight;
       var itemOffset = getPosition(item).top;
       var animStart = 1 / animThreshold;
-      var itemPoint = 200;
+      var itemPoint = window.innerHeight - itemHeight / animStart;
 
       if (itemHeight > window.innerHeight) {
-        itemPoint = 200;
+        itemPoint = window.innerHeight - window.innerHeight / animStart;
       }
 
       if (pageYOffset > itemOffset - itemPoint) {
