@@ -366,7 +366,7 @@ function userSwiped() {
       if (xDiff > 0) {
         /* left swipe */
       } else {
-        if (document.body.classList.contains('_menu')) {
+        if (document.querySelector('.wrapper').classList.contains('_menu')) {
           closeMenu();
         }
       }
@@ -388,17 +388,17 @@ userSwiped();
 function openMenu() {
   document.querySelector('.menu-icon').classList.add('_active');
   document.querySelector('.menu__body').classList.add('_active');
-  document.body.classList.add('_menu');
+  document.querySelector('.wrapper').classList.add('_menu');
 }
 
 function closeMenu() {
   document.querySelector('.menu-icon').classList.remove('_active');
   document.querySelector('.menu__body').classList.remove('_active');
-  document.body.classList.remove('_menu');
+  document.querySelector('.wrapper').remove('_menu');
 }
 
 document.querySelector('.menu-icon').addEventListener('click', function () {
-  if (document.body.classList.contains('_menu')) {
+  if (document.querySelector('.wrapper').classList.contains('_menu')) {
     closeMenu();
   } else {
     openMenu();
