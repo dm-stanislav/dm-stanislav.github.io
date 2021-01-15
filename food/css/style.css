@@ -1110,10 +1110,11 @@ h6 {
 .call__vegetables._animated {
     opacity: 1;
 }
+.call__parallax {
+    display: flex;
+    justify-content: center;
+}
 .call__parallax img {
-    position: absolute;
-    top: 0;
-    left: 0;
     padding: 102px 0 0 0;
     min-width: 1815px;
     -webkit-animation: floatAnim 1.5s ease-in-out infinite alternate !important;
@@ -1409,7 +1410,6 @@ h6 {
         max-width: 14.54327vh;
     }
     .call__parallax img {
-        left: -17.36111vw !important;
         padding: 7.08333vw 0 0 0;
         min-width: 126.04167vw;
     }
