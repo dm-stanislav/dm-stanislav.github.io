@@ -594,6 +594,8 @@ h6 {
 .showcase .vegetables__parallax {
     -webkit-animation: floatAnim 1.5s ease-in-out infinite alternate !important;
     animation: floatAnim 1.5s ease-in-out infinite alternate !important;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .showcase .vegetables__img {
     display: inline-block;
