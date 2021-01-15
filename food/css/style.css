@@ -1111,7 +1111,7 @@ h6 {
     opacity: 1;
 }
 .call__parallax {
-    display: flex;
+    display: flex !important;
     justify-content: center;
 }
 .call__parallax img {
